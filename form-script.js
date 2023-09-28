@@ -10,6 +10,7 @@ image.style.height = "20px";
 /** ------------end::image------------------ */
 
 /** ------------beggin::Nom------------------ */
+
 var errorsNom = document.getElementById("errorsNom");
 var nomInput = document.getElementById("nom");
 
@@ -332,16 +333,7 @@ function valideOnlyLettre(ville) {
 
 /** -------------end::Ville---------------- */
 
-function validateForm() {
-   
-    if (validateNom() || validatePrenom() || validateEmail() || validatePassword() || validateConfirmPassword() || validateJourNaissance() || validateNumeroRue() || validateNomRue() || validateCodePostal() || validateVille()) {
-        
-        return true;
-    }
-    return false; 
-}
-
-
+/** -------------beggin::ajout de course--------- */
 var courseInput = document.getElementById("course_realise");
 var buttonAdd = document.getElementById("add_course");
 var buttonDelete = document.getElementById("delete_course");
@@ -367,3 +359,5 @@ buttonDelete.addEventListener("click", function(e) {
         spans[i].remove();
     }
 });
+/** -------------end::Ajout de course---------------- */
+
