@@ -6,10 +6,7 @@ body{
 }
 /** beggin::header **/
 
-header {
-    position: fixed;
-    z-index: 20;
-}
+
 
 header > div:first-child {
     height: 80px;
