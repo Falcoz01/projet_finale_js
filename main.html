@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Inscription | Run in Lyon</title>
+      <link href="style.css" rel="stylesheet">
+      <script src="https://kit.fontawesome.com/96d5778ce2.js" crossorigin="anonymous"></script>
+   </head>
+   <header>
+      <div class="header-content">
+         <img src="medias/logo-png.png">
+         <ul>
+            <div >
+               <li><a href="#">Accueil</a></li>
+               <li><a href="#">À propos</a></li>
+               <li><a href="#">Services</a></li>
+               <li><a href="#">Contact</a></li>
+            </div>
+            <div>
+               <li><button class="button-inscription">Inscription</button></li>
+               <li><button class="button-connexion">Connexion</button></li>
+            </div>
+         </ul>
+      </div>
+   </header>
+   <body>
+      <div class="conteneur">
+         <img src="medias/marathon.jpg" alt="Votre image">
+         <div class="superposee">
+            <h1>Inscription</h1>
+            <form  id="form" method="post">
+               <label for="nom">Nom</label>
+               <input type="text" id="nom" name="nom" placeholder="&#xf007">
+               <span id="errorsNom"></span>
+               <label for="prenom">Prénom </label>
+               <input type="text" id="prenom" name="prenom" >
+               <span id="errorsPrenom"></span>
+               <label for="email">Email</label>
+               <input type="text" id="email" name="email" >
+               <span id="errorsEmail"></span>
+               <label for="password">Mot de passe </label>
+               <input type="password" id="password" name="password" >
+               <span id="errorsPassword"></span>
+               <label for="confirm_password">Confirmation du mot de passe</label>
+               <input type="password" id="confirm_password" name="confirm_password" >
+               <span id="errorsConfirmPassword"></span>
+               <label for="jour_naissance">Jour de naissance</label>
+               <input type="number" id="jour_naissance" name="jour_naissance" >
+               <span id="errorsJourNaissance"></span>
+               <label for="mois">Mois :</label>
+               <select id="mois" name="mois"></select>
+               <label for="annee_naissance">Année de naissance</label>
+               <input type="number" id="annee_naissance" name="annee_naissance" >
+               <span id="errorsAnneeNaissance"></span>
+               <label for="numero_rue">Numéro de rue </label>
+               <input type="number" id="numero_rue" name="numero_rue" >
+               <span id="errorsNumeroRue"></span>
+               <label for="nom_rue">Nom de rue </label>
+               <input type="text" id="nom_rue" name="nom_rue" >
+               <span id="errorsNomRue"></span>
+               <label for="code_postal">Code postal </label>
+               <input type="number" id="code_postal" name="code_postal"  >
+               <span id="errorsCodePostal"></span>
+               <label for="ville">Ville </label>
+               <input type="text" id="ville" name="ville"  >
+               <span id="errorsVille"></span>        
+               <label for="course_realise">Course Réalisé</label>
+               <input type="text" id="course_realise" name="course_realise"  >
+               <div id="courseContainer"></div>
+               <button id="add_course" class="btn-accept">Ajouter</button>
+               <button id="delete_course" class="btn-refuse">Delete</button>
+               <button class="button-valider">Valider</button>
+            </form>
+         </div>
+      </div>
+   </body>
+   <section id="footer">
+      <div class="d6">
+         <div class="icon1">
+            <a href="https://www.facebook.com/RuninLyon/?locale=fr_FR" class="fa-brands fa-facebook"></a>
+            <a href="https://twitter.com/benevolesril" class="fa-brands fa-twitter"></a>
+            <a href="https://www.instagram.com/runinfrance/?hl=fr" class="fa-brands fa-instagram"></a>
+            <a href="https://www.youtube.com/watch?v=NRNx-LsIVVI" class="fa-brands fa-youtube"></a>
+         </div>
+         <div class="texte">
+            <a href="#" >Mentions légales</a>
+            <a href="#">Droits des personnes</a>
+            <a href="#">Contenue et propriété</a>
+            <a href="#">Condition d'utilisation</a>
+         </div>
+      </div>
+   </section>
+   <script src="form-script.js" ></script>
+</html>
